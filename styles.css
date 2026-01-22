@@ -40,19 +40,9 @@ nav a:hover {
 /* HAMBURGER */
 .hamburger {
   display: none;
-  flex-direction: column;
-  gap: 5px;
+  font-size: 26px;
   cursor: pointer;
 }
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #000;
-  border-radius: 2px;
-  transition: 0.3s ease;
-}
-
 
 #hero {
     position: relative;
@@ -391,30 +381,20 @@ textarea {
 @media (max-width: 768px) {
 
   /* NAV */
-  nav {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .nav-links {
-    gap: 16px;
-  }
-
-   .hamburger {
-    display: flex;
+  .hamburger {
+    display: block;
   }
 
   .nav-links {
     position: absolute;
-    top: 100%;
-    right: 0;
+    top: 80px;
+    left: 0;
+    width: 100%;
     background-color: #f2fbfd;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
+    align-items: center;
     gap: 20px;
-
+    padding: 30px 0;
     display: none;
   }
 
@@ -453,26 +433,30 @@ textarea {
   }
 
   /* CONTACT */
+   .contact-container {
+    height: auto;
+    padding: 40px 20px;
+  }
+
   .text-card {
-    padding: 25px;
-  }
-
-  .contact-heading {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .subheading {
-    font-size: 12px;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    gap: 40px;
   }
 
   .form-card {
     width: 100%;
+    height: auto;
+    margin-top: 0;
   }
 
-  .form-btn {
-    width: 100%;
+  .contact-heading {
+    font-size: 32px;
+    line-height: 40px;
   }
+
 }
 
 

@@ -11,18 +11,16 @@
 <nav>
     <a href="index.html"><img src="/images/logo-1.PNG" alt="" class="logo"></a>
 
-
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
     <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </div>
+
+
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
 
 </nav>
 
@@ -168,7 +166,7 @@
   const navLinks = document.getElementById("navLinks");
 
   hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+  navLinks.classList.toggle("active");
   });
 </script>
 
