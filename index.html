@@ -11,6 +11,13 @@
 <nav>
     <a href="index.html"><img src="/images/logo-1.PNG" alt="" class="logo"></a>
 
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="#services">Services</a>
@@ -146,14 +153,24 @@
 </section>
 
 <script>
+  /* ===== CONTACT FORM ===== */
   const form = document.getElementById("contactForm");
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); // stops the default page reload
-    form.reset();       // clears all inputs
-
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop reload
+    form.reset();       // clear inputs
     window.location.href = "index.html";
   });
+
+
+  /* ===== HAMBURGER MENU ===== */
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 </script>
+
 </body>
 </html>
