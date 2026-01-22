@@ -5,6 +5,10 @@ body{
     background-color: #f2fbfd;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ===== NAV ===== */
 nav {
     display: flex;
@@ -378,25 +382,22 @@ textarea {
 
   /* Hamburger */
   .hamburger {
-    display: flex;
-    align-items: center;
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
   }
 
   .nav-links {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background-color: #f2fbfd;
+    display: none;          /* hidden by default */
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 30px 0;
-    display: none; /* hide by default */
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;       /* small spacing under nav bar */
   }
 
   .nav-links.active {
-    display: flex;
+    display: flex;          /* shows links when hamburger clicked */
   }
 
   /* HERO */
