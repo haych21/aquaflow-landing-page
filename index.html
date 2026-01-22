@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    
+<nav>
+    <a href="index.html"><img src="/images/logo-1.PNG" alt="" class="logo"></a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+
+
+<section id="hero">
+    <img src="/images/hero-1.png" alt="" class="mascot">
+    <h1 class="hero-heading">Plumbing Emergency? <br> We’re On Our Way.</h1>
+    <h2>Fast Response • 24/7 Call-Out • Trusted Local Plumbers</h2>
+    <button>Call Now - Free Quote</button>
+</section>
+
+<section id="services">
+    <h2 class="services-title">Services</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="/images/pipe-plumbing.jpg" alt="">
+            <h3 class="services-heading">Pipe Repair & Leaks</h3>
+        </div>
+
+          <div class="card">
+            <img src="/images/boiler-repair.jpg" alt="">
+            <h3 class="services-heading">Boiler Repair</h3>
+        </div>
+
+          <div class="card">
+            <img src="/images/bathroom-plumbing.jpg" alt="">
+            <h3 class="services-heading">Bathroom Plumbing</h3>
+        </div>
+
+         <div class="card">
+            <img src="/images/central-heating.jpg" alt="">
+            <h3 class="services-heading">Central Heating</h3>
+        </div>
+
+         <div class="card">
+            <img src="/images/drain-cleaning.jpg" alt="">
+            <h3 class="services-heading">Drain Cleaning</h3>
+        </div>
+
+        <div class="card">
+            <img src="/images/emergency-service.jpg" alt="">
+            <h3 class="services-heading">24/7 Emergency Service</h3>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-container">
+
+        <div class="contact-card text-card">
+
+            <!-- LEFT SIDE CONTENT -->
+            <div class="contact-content">
+                <p class="tagline">We're here to help you</p>
+
+                <h1 class="contact-heading">
+                    <span>Discuss</span> Your <br>
+                    Plumbing <br>
+                    Needs Today
+                </h1>
+
+                <p class="subheading">
+                    Need expert plumbing solutions for your home <br>
+                    or business? Contact us now.
+                </p>
+
+                <!-- EMAIL -->
+                <div class="contact-item">
+                    <img src="/images/email.png" alt="Email icon" class="email">
+
+                    <div class="contact-text">
+                        <p class="contact-title">E-mail</p>
+                        <p class="title-email">aquaflow.plumbing@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- PHONE -->
+                <div class="contact-item">
+                    <img src="/images/phone-call.png" alt="Phone icon" class="phone">
+
+                    <div class="contact-text">
+                        <p class="contact-title">Phone</p>
+                        <p class="title-phone">+44 1234 567890</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE FORM -->
+            <div class="contact-card form-card">
+                <!-- form will go here -->
+                 <form id="contactForm" class="contact-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="your@email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service">
+                            <option>Select a service</option>
+                            <option>Pipe Repair</option>
+                            <option>Boiler Repair</option>
+                            <option>Bathroom Plumbing</option>
+                            <option>Central Heating</option>
+                            <option>Drain Cleaning</option>
+                            <option>Emergency Call-Out</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Tell us about the issue..."></textarea>
+                    </div>
+
+                    <button type="submit" class="form-btn"><img src="/images/arrow-right.png" class="btn-icon">Get A Solution</button>
+                 </form>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<script>
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // stops the default page reload
+    form.reset();       // clears all inputs
+
+    window.location.href = "index.html";
+  });
+</script>
+</body>
+</html>
