@@ -1,14 +1,17 @@
+/* ===== GLOBAL ===== */
 body{
     margin: 0;
     font-family: monospace;
     background-color: #f2fbfd;
 }
 
+/* ===== NAV ===== */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    position: relative; /* ✅ Needed for mobile dropdown */
 }
 
 .logo {
@@ -37,13 +40,14 @@ nav a:hover {
     color: #59a9cb;
 }
 
-/* HAMBURGER */
+/* ===== HAMBURGER ===== */
 .hamburger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
+    display: none; /* hidden on desktop */
+    font-size: 26px;
+    cursor: pointer;
 }
 
+/* ===== HERO ===== */
 #hero {
     position: relative;
     height: 85vh;
@@ -52,7 +56,6 @@ nav a:hover {
     align-items: center;
     flex-direction: column;
 }
-
 
 #hero::after {
     content: "";
@@ -111,10 +114,9 @@ button:hover {
     cursor: pointer;
 }
 
-
-
+/* ===== SERVICES ===== */
 #services {
-position: relative;
+    position: relative;
 }
 
 .services-title {
@@ -147,7 +149,6 @@ position: relative;
 
 .card:hover {
     transform: translateY(-5px);
-
     cursor: pointer;
 }
 
@@ -173,6 +174,7 @@ img {
     background: rgba(0, 0, 0, 0.3);
 }
 
+/* ===== CONTACT ===== */
 #contact {
     position: relative;
 }
@@ -189,9 +191,8 @@ img {
     height: 600px;
     background-color: #e2eef1;
     border-radius: 25px;
-    /* combine padding/margin adjustments if needed */
-    padding: 75px 80px 75px 80px; /* top/right/bottom/left padding */
-    box-sizing: border-box;        /* ensures padding doesn't break size */
+    padding: 75px 80px 75px 80px; 
+    box-sizing: border-box; 
     display: flex;
     gap: 90px;
 }
@@ -199,7 +200,7 @@ img {
 .tagline {
     text-transform: uppercase;
     color: #8b8887;
-    margin-bottom: 10px;  /* replaces huge padding */
+    margin-bottom: 10px;  
     display: block;
 }
 
@@ -207,7 +208,7 @@ img {
     font-weight: 100;
     font-size: 46px;
     line-height: 60px;
-    margin: 0 0 20px 0;      /* spacing below the heading */
+    margin: 0 0 20px 0;      
 }
 
 span {
@@ -218,7 +219,7 @@ span {
     color: #8b8887;
     text-transform: uppercase;
     line-height: 20px;
-    margin-top: -10px;        /* replaces negative margin */
+    margin-top: -10px;        
     margin-bottom: 30px
 }
 
@@ -226,7 +227,6 @@ span {
     width: 40px;
     height: 40px;
 }
-
 
 .contact-title{
     color: #8b8887;
@@ -314,9 +314,9 @@ textarea {
     margin-left: -10px;
 }
 
+/* ===== MEDIA QUERY: 1024px ===== */
 @media (max-width: 1024px) {
 
-  /* NAV */
   nav {
     padding: 20px;
   }
@@ -331,7 +331,6 @@ textarea {
     letter-spacing: 2px;
   }
 
-  /* HERO */
   #hero {
     height: auto;
     padding: 40px 20px;
@@ -346,7 +345,6 @@ textarea {
     font-size: 24px;
   }
 
-  /* SERVICES */
   .card-container {
     justify-content: center;
     gap: 30px;
@@ -358,7 +356,6 @@ textarea {
     height: 280px;
   }
 
-  /* CONTACT */
   .text-card {
     width: 90%;
     height: auto;
@@ -376,13 +373,13 @@ textarea {
   }
 }
 
-
-
+/* ===== MEDIA QUERY: 768px ===== */
 @media (max-width: 768px) {
 
-  /* NAV */
+  /* Hamburger */
   .hamburger {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
   .nav-links {
@@ -395,7 +392,7 @@ textarea {
     align-items: center;
     gap: 20px;
     padding: 30px 0;
-    display: none;
+    display: none; /* hide by default */
   }
 
   .nav-links.active {
@@ -403,6 +400,11 @@ textarea {
   }
 
   /* HERO */
+  #hero {
+    height: auto;
+    padding: 30px 20px;
+  }
+
   .mascot {
     width: 180px;
     height: 180px;
@@ -433,14 +435,14 @@ textarea {
   }
 
   /* CONTACT */
-   .contact-container {
+  .contact-container {
     height: auto;
     padding: 40px 20px;
   }
 
   .text-card {
     flex-direction: column;
-    width: 100%;
+    width: 100% !important; 
     height: auto;
     padding: 30px 20px;
     gap: 40px;
@@ -456,8 +458,4 @@ textarea {
     font-size: 32px;
     line-height: 40px;
   }
-
 }
-
-
-
