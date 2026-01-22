@@ -380,24 +380,31 @@ textarea {
 /* ===== MEDIA QUERY: 768px ===== */
 @media (max-width: 768px) {
 
-  /* Hamburger */
+     nav {
+    padding: 20px;          /* reduce side padding */
+    justify-content: space-between; 
+  }
+
+  .logo {
+    width: 90px;             /* smaller logo on mobile */
+    height: auto;
+  }
+
   .hamburger {
-    display: block;
-    font-size: 26px;
-    cursor: pointer;
+    display: block;          /* show hamburger */
   }
 
   .nav-links {
-    display: none;          /* hidden by default */
+    display: none;
     flex-direction: column;
     gap: 15px;
     width: 100%;
     text-align: center;
-    margin-top: 10px;       /* small spacing under nav bar */
+    margin-top: 10px;
   }
 
   .nav-links.active {
-    display: flex;          /* shows links when hamburger clicked */
+    display: flex;
   }
 
   /* HERO */
