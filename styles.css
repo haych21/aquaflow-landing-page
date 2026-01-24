@@ -476,3 +476,20 @@ textarea {
     line-height: 40px;
   }
 }
+
+/* ===== TOUCH DEVICES FIX (phones & tablets) ===== */
+@media (hover: none) {
+
+  button:hover {
+    transform: none; /* stop lift on buttons */
+  }
+
+  .card:hover {
+    transform: none; /* stop lift on service cards */
+  }
+
+  button:active {
+    background-color: #3f94b8; /* tap feedback still works */
+  }
+
+}
