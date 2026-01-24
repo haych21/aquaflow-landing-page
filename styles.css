@@ -433,9 +433,18 @@ textarea {
   }
 
   /* SERVICES */
+
+  #services {
+    padding-bottom: 60px;
+  }
   .services-title {
     font-size: 26px;
   }
+
+  .card-container {
+  min-height: auto;     /* stop forcing tall section */
+  padding-bottom: 20px; /* space under last card */
+}
 
   .card {
     width: 100%;
