@@ -658,9 +658,13 @@ textarea {
   }
 
   /* CONTACT */
+
+   .services-title-main {
+    font-size: 26px;
+  }
   .contact-container {
     height: auto;
-    padding: 40px 20px;
+    padding: 20px;
   }
 
   .text-card {
