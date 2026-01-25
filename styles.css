@@ -672,6 +672,7 @@ textarea {
     padding-left: 10px;
     width: 25px;                  /* smaller icon */
     height: auto;
+    margin-bottom: 20px;
   }
 
   .stars {
@@ -683,6 +684,7 @@ textarea {
     line-height: 1.5;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 20px;
   }
 
   .author-info {
