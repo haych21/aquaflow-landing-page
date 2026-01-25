@@ -674,6 +674,10 @@ textarea {
     height: auto;
   }
 
+  .stars {
+    display: none;    /* hide stars on mobile */
+}
+
   .testimonial-text {
     font-size: 18px;               /* smaller font for mobile */
     line-height: 1.5;
@@ -683,10 +687,12 @@ textarea {
 
   .author-info {
   min-width: 140px;   /* 👈 gives text room */
+  gap: 8px;              /* space between name & handle */
+  align-items: flex-start; /* align top edges */
 }
 
   .testimonial-author {
-    width: 180px;                  /* slightly smaller badge */
+    width: 210px;                  /* slightly smaller badge */
     padding: 10px 14px;
     bottom: 0;
     left: 0;
