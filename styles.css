@@ -670,9 +670,8 @@ textarea {
   .testimonial-icon {
     padding-top: 15px;
     padding-left: 10px;
-    width: 25px;                  /* smaller icon */
+    width: 35px;                  /* smaller icon */
     height: auto;
-    margin-bottom: 20px;
   }
 
   .stars {
