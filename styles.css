@@ -253,17 +253,34 @@ p{
     cursor: pointer;
 }
 
+.testimonial-top {
+    display: flex;
+    flex-direction: column;   /* STACK images */
+    align-items: flex-start;  /* keep them left aligned */
+
+}
+
 .testimonial-icon {
-    padding-top: 30px;
+    height: auto;
+    display: block;
     padding-left: 20px;
+    padding-top: 30px;
+}
+
+.stars {
+    padding: 10px;
+    width: 110px;
+    height: auto;
+    display: block;
 }
 
 .testimonial-text {
   font-size: 24px;
   line-height: 1.7;
   color: #333;
-  padding-left: 10px;
+  padding-left: 20px;
   text-align: left;
+  margin-top: -10px; /* 👈 pulls text upward */
 }
 
 .testimonial-author {
@@ -273,7 +290,7 @@ p{
 
   background: #f2fbfd; /* SAME as body background */
   padding: 12px 18px;
-  width: 120px;
+  width: 230px;
   border-top-right-radius: 15px;
   gap: 5px;
 
