@@ -546,7 +546,9 @@ textarea {
     }
 
      nav {
-    padding: 20px;          /* reduce side padding */
+    padding-top: 70px;
+    padding-left: 20px;    
+    padding-right: 20px;          /* reduce side padding */
     justify-content: space-between; 
   }
 
