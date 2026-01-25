@@ -588,6 +588,10 @@ textarea {
     max-width: 340px;
   }
   /* TESTIMONIALS */
+   .contact-title-main {
+    font-size: 26px;
+  }
+
   .image-container {
     flex-direction: column;       /* stack elements vertically */
     align-items: center;          /* center horizontally */
@@ -659,7 +663,7 @@ textarea {
 
   /* CONTACT */
 
-   .services-title-main {
+   .contact-title-main {
     font-size: 26px;
   }
   .contact-container {
