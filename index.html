@@ -105,7 +105,7 @@
                 <p class="user-handle">@aisharahman</p>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
 </section>
 
@@ -202,23 +202,22 @@
     window.location.href = "index.html";
   });
 
+  /* ===== HAMBURGER MENU ===== */
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
 
-/* HAMBURGER MENU */
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-// Close menu when a nav link is tapped
-const navItems = navLinks.querySelectorAll("a");
-
-navItems.forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
   });
-});
+
+  // Close menu when a nav link is tapped
+  const navItems = navLinks.querySelectorAll("a");
+
+  navItems.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });
 </script>
 
 </body>
