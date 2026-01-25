@@ -191,6 +191,28 @@ button:hover {
     padding-top: 10px;
     margin-bottom: 20px;
 }
+.image-container {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.trustpilot {
+    width: 150px;
+    height: 50px; 
+    margin-right: 80px;
+}
+
+.rating {
+    color: #8b8887;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+.reviews {
+    color: #8b8887;
+    margin-top: 20px;
+}
 
 .testimonials-container {
     display: flex;
@@ -285,11 +307,17 @@ button:hover {
 }
 
 
-
-
 /* ===== CONTACT ===== */
 #contact {
     position: relative;
+}
+
+.contact-title-main {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 .contact-container {
@@ -560,6 +588,28 @@ textarea {
     max-width: 340px;
   }
   /* TESTIMONIALS */
+  .image-container {
+    flex-direction: column;       /* stack elements vertically */
+    align-items: center;          /* center horizontally */
+    height: auto;                 /* let height adjust */
+  }
+
+  .trustpilot {
+    width: 120px;                 /* smaller on mobile */
+    height: 40px; 
+    margin: 0 0 10px 0;           /* remove large right margin, add bottom spacing */
+  }
+
+  .rating {
+    margin: 0 0 5px 0;            /* adjust spacing for mobile */
+    text-align: center;           /* center text */
+  }
+
+  .reviews {
+    margin: 0;                    /* remove top/right margins */
+    text-align: center;           /* center text */
+  }
+
 
   .testimonials-container {
     flex-direction: column;       /* stack cards vertically */
