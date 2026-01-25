@@ -681,8 +681,12 @@ textarea {
     padding-right: 10px;
   }
 
+  .author-info {
+  min-width: 140px;   /* 👈 gives text room */
+}
+
   .testimonial-author {
-    width: 110px;                  /* slightly smaller badge */
+    width: 180px;                  /* slightly smaller badge */
     padding: 10px 14px;
     bottom: 0;
     left: 0;
