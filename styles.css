@@ -686,9 +686,6 @@ textarea {
     height: auto;
   }
 
-  .stars {
-    display: none;    /* hide stars on mobile */
-}
 
   .testimonial-text {
     font-size: 18px;               /* smaller font for mobile */
@@ -705,21 +702,53 @@ textarea {
 }
 
   .testimonial-author {
-    width: 210px;                  /* slightly smaller badge */
-    padding: 10px 14px;
-    bottom: 0;
-    left: 0;
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+
+   width: auto;
+   max-width: calc(100% - 20px);
+   padding: 8px 14px;
+
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   border-top-right-radius: 15px;
+   background: #f2fbfd;
   }
 
   .testimonial-avatar {
-    width: 25px;
-    height: 25px;
-    left: -5px;                     /* shift left slightly on mobile */
+   position: static;                    
+   width: 26px; 
+   height: 26px;
+   border-radius: 50%;
   }
 
-  .testimonial-name,
+  .author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    min-width: unset;
+  }
+
+  .testimonial-name {
+    font-size: 11px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+    .rating {
+    height: 32px;     /* smaller but visible */
+    margin-bottom: 0;
+  }
+
+
   .user-handle {
     font-size: 10px;
+    line-height: 1.2;
   }
 
   /* CONTACT */
