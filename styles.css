@@ -703,8 +703,8 @@ textarea {
 
   .testimonial-author {
    position: absolute;
-   bottom: 10px;
-   left: 10px;
+   bottom: -10px;
+   left: -10px;
 
    width: auto;
    max-width: calc(100% - 20px);
@@ -714,7 +714,8 @@ textarea {
    align-items: center;
    gap: 10px;
 
-   border-top-right-radius: 15px;
+   border-top-right-radius: 25px;
+   border-bottom-left-radius: 25px;
    background: #f2fbfd;
   }
 
@@ -741,10 +742,9 @@ textarea {
   }
 
     .rating {
-    height: 32px;     /* smaller but visible */
+    height: 34px;     /* smaller but visible */
     margin-bottom: 0;
   }
-
 
   .user-handle {
     font-size: 10px;
